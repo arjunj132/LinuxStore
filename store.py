@@ -12,7 +12,6 @@ import sys
 import urllib.request
 import urllib.error
 
-
 result = ""
 
 def install(package):
@@ -20,7 +19,11 @@ def install(package):
 
 def install_pip():
     install(app.get())
-    Label(frame1, text="Installed app").pack()
+    Label(frame1, text="Installed app via pip").pack()
+
+def install_npm():
+    subprocess.check_call(["npm", "install", app.get()])
+    Label(frame1, text="Installed app via npm").pack()
 
 def check():
     # find on PyPi
@@ -32,7 +35,18 @@ def check():
     except urllib.error.URLError as e:
         print("Something went wrong")
     if result != "404 Not Found":
-        Button(frame1, text = "Install on PyPi", command = install_pip).pack()
+        Button(frame1, text = "Install " + app.get() +" on PyPi", command = install_pip).pack()
+        
+    # search on npm
+    try:
+        with urllib.request.urlopen('https://www.npmjs.com/package/' + app.get()) as f:
+            result = f.read(13)
+    except urllib.error.HTTPError as e:
+        result = "404 Not Found"
+    except urllib.error.URLError as e:
+        print("Something went wrong")
+    if result != "404 Not Found":
+        Button(frame1, text = "Install " + app.get() + " on npm", command = install_npm).pack()
     
 root = Tk()
 root.geometry('400x300')
