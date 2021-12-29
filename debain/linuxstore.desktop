@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=linuxstore
+Comment=A store for linux based operating systems
+Exec=linuxstore
+Icon=/usr/share/icons/gnome/48x48/apps/file-manager.png
+Categories=Utility;
+Terminal=true
+StartupNotify=true
+StartupWMClass=linuxstore
