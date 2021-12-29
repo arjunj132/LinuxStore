@@ -2,7 +2,7 @@
 # you should know that you are not
 # doing anything dangerous
 # you are just installing the
-# LinuxStore (๑˃̵ᴗ˂̵)و
+# LinuxStore for Python (๑˃̵ᴗ˂̵)و
 
 
 from tkinter import *
@@ -48,13 +48,13 @@ def check():
     if result != "404 Not Found":
         Button(frame1, text = "Install " + app.get() + " on npm", command = install_npm).pack()
     
+    
 root = Tk()
 root.geometry('400x300')
 root.title("LinuxStore")
 
-notebook = ttk.Notebook(root)
+notebook = ttk.Notebook(root,height=1000,width=1000)
 notebook.pack(pady=10, expand=True)
-
 frame1 = ttk.Frame(notebook, width=400, height=280)
 frame2 = ttk.Frame(notebook, width=400, height=280)
 frame1.pack(fill='both', expand=True)
@@ -62,11 +62,11 @@ frame2.pack(fill='both', expand=True)
 Label(frame1, text = "Search for an app:").pack()
 app = Entry(frame1)
 app.pack()
-
-    
 Button(frame1, text='Check for apps', command = check).pack()
+Label(frame2, text="System Information:").pack()
+Label(frame2, text="Using LinuxStore with Python").pack()
 notebook.add(frame1, text='Store')
-notebook.add(frame2, text='My Account')
+notebook.add(frame2, text='System')
 
 
 root.mainloop()
