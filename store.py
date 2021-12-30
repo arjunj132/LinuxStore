@@ -4,16 +4,19 @@
 # you are just installing the
 # LinuxStore for Python (๑˃̵ᴗ˂̵)و
 
-
+# The dependencies:
 from tkinter import *
 import tkinter.ttk as ttk
 import subprocess
 import sys
 import urllib.request
 import urllib.error
+import getpass
+import platform
 
 result = ""
 
+# the app script
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
@@ -64,7 +67,8 @@ app = Entry(frame1)
 app.pack()
 Button(frame1, text='Check for apps', command = check).pack()
 Label(frame2, text="System Information:").pack()
-Label(frame2, text="Using LinuxStore with Python").pack()
+Label(frame2, text="Welcome back, " + getpass.getuser()).pack()
+Label(frame2, text="You're running LinuxStore on python " +  platform.python_version()).pack()
 notebook.add(frame1, text='Store')
 notebook.add(frame2, text='System')
 
