@@ -23,6 +23,8 @@ Then open the directory and run the file:
 
 ```bash
 cd LinuxStore
+pip3 install beautifulsoup4
+pip install requests
 python3 store.py
 ```
 
