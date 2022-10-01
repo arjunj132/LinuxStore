@@ -13,15 +13,10 @@ A one file complete store for Linux (tested on ubuntu and debian).
 
 ## Installation
 
-Install using git:
+All you need to do is run these commands:
 
 ```bash
 git clone https://github.com/arjunj132/LinuxStore.git
-```
-
-Then open the directory and run the file:
-
-```bash
 cd LinuxStore
 pip3 install beautifulsoup4
 pip install requests
