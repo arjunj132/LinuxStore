@@ -1,3 +1,8 @@
+<div align="center"><pre>   __   _                 ______              
+  / /  (_)__  __ ____ __ / __/ /____  _______ 
+ / /__/ / _ \/ // /\ \ /_\ \/ __/ _ \/ __/ -_)
+/____/_/_//_/\_,_//_\_\/___/\__/\___/_/  \__/ </pre></div>
+
 # LinuxStore
 
 A one file complete store for Linux (tested on ubuntu and debian).
