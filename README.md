@@ -1,5 +1,6 @@
 # LinuxStore
 
+A one file complete store for Linux (tested on ubuntu and debian).
 
 ## Installation
 
