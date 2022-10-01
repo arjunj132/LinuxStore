@@ -1,7 +1,11 @@
 <div align="center"><pre>   __   _                 ______              
   / /  (_)__  __ ____ __ / __/ /____  _______ 
  / /__/ / _ \/ // /\ \ /_\ \/ __/ _ \/ __/ -_)
-/____/_/_//_/\_,_//_\_\/___/\__/\___/_/  \__/ </pre></div>
+/____/_/_//_/\_,_//_\_\/___/\__/\___/_/  \__/
+One store. Many apps.
+<br><br>
+The ultimate app store for Linux
+</pre></div>
 
 # LinuxStore
 
@@ -26,4 +30,4 @@ For more options open our release: https://github.com/arjunj132/LinuxStore/relea
 
 ## Usage:
 
-Enter the project name and it should give you a result on some services to download the project.
+Use the tabs to navigate and install apps and packages.
