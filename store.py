@@ -198,13 +198,6 @@ def download(item):
     soup = BeautifulSoup(page.content, "html.parser")
     installCommand = soup.find(id="snap-install").text
     subprocess.check_call(installCommand.split(" "))
-    testcom = installCommand.split(" ")
-    print("Running app...")
-    try:
-        testcom.remove("--classic")
-    except:
-        pass
-    subprocess.check_call(["sudo", "snap", "run", testcom[-1]])
     # finished install
     root["cursor"] = 'arrow'
     
