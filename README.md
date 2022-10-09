@@ -19,7 +19,7 @@ All you need to do is run these commands:
 git clone https://github.com/arjunj132/LinuxStore.git
 cd LinuxStore
 pip3 install beautifulsoup4
-pip install requests
+pip3 install requests
 python3 store.py
 ```
 
