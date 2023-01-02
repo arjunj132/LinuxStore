@@ -9,7 +9,7 @@ The ultimate app store for Linux
 
 # LinuxStore
 
-A one file complete store for Linux (tested on ubuntu and debian).
+A one file complete store for Linux based on snap (tested on ubuntu and debian).
 
 ## Installation
 
